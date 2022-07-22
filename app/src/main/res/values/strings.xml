@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PlanetSearch</string>
+    <string name="Item1">Item1</string>
+    <string name="Item2">Item2</string>
+    <string-array name="planetarray">
+        <item>@string/Item1</item>
+        <item>@string/Item2</item>
+    </string-array>
+</resources>
