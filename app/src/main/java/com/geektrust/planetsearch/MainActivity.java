@@ -10,6 +10,7 @@ import com.geektrust.planetsearch.databinding.ActivityMainBinding;
 import com.geektrust.planetsearch.model.PlanetDetails;
 import com.geektrust.planetsearch.model.PlanetListResposne;
 import com.geektrust.planetsearch.util.Logger;
+import com.geektrust.planetsearch.util.PlanetAdapter;
 import com.geektrust.planetsearch.viewmodel.ViewModel;
 
 import java.util.List;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
     private ViewModel viewModel;
     private DisposableObserver mGetAndroidVersion;
+    private PlanetAdapter planetAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +71,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateList() {
-        viewModel.getDataList();
+        try {
+            viewModel.getDataList();
+            if(null!=viewModel.getDataList()) {
+                planetAdapter = new PlanetAdapter(this, viewModel.getDataList());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
