@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".VehicleActivity">
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="vehicleViewModel"
+            type="com.geektrust.planetsearch.viewmodel.SpaceVehiclesViewModel" />
+    </data>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/asset_3xxxhdpi"
+            android:padding="10dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        style="@style/NormalText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="Finding Falcone!"
+                        android:layout_gravity="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/textView0"
+                        style="@style/NormalText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:text="Select Vehicles you want to search in:"
+                        android:gravity="center"
+                        android:layout_below="@+id/textView"
+                        android:layout_alignRight="@+id/textView"
+                        android:layout_alignEnd="@+id/textView"
+                        android:layout_alignLeft="@+id/textView"
+                        android:layout_alignStart="@+id/textView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_vehiclelist"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/textView0"
+                        android:layout_alignRight="@+id/textView0"
+                        android:layout_alignEnd="@+id/textView0"
+                        android:layout_alignLeft="@+id/textView0"
+                        android:layout_alignStart="@+id/textView0"/>
+                    <Button
+                        android:id="@+id/btn_find"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Find Falcone!"
+                        android:layout_below="@+id/rv_vehiclelist"
+                        android:layout_alignRight="@+id/rv_vehiclelist"
+                        android:layout_alignEnd="@+id/rv_vehiclelist"
+                        android:layout_alignLeft="@+id/rv_vehiclelist"
+                        android:layout_alignStart="@+id/rv_vehiclelist"/>
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        style="@style/NormalText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:text="Time Taken: 0"
+                        android:gravity="center"
+                        android:layout_below="@+id/btn_find"
+                        android:layout_alignRight="@+id/btn_find"
+                        android:layout_alignEnd="@+id/btn_find"
+                        android:layout_alignLeft="@+id/btn_find"
+                        android:layout_alignStart="@+id/btn_find"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_planetlist"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/textView5"
+                        android:layout_alignRight="@+id/textView5"
+                        android:layout_alignEnd="@+id/textView5"
+                        android:layout_alignLeft="@+id/textView5"
+                        android:layout_alignStart="@+id/textView5"/>
+                </RelativeLayout>
+            </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

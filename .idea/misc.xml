@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/sjani/AndroidStudioProjects/PlanetSearch/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/sjani/AndroidStudioProjects/PlanetSearch/app/src/main/res/layout/activity_find_falcone.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/sjani/AndroidStudioProjects/PlanetSearch/app/src/main/res/layout/activity_main.xml" value="0.1922141119221411" />
         <entry key="..\:/Users/sjani/AndroidStudioProjects/PlanetSearch/app/src/main/res/layout/activity_main2.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/sjani/AndroidStudioProjects/PlanetSearch/app/src/main/res/layout/activity_vehicle.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/sjani/AndroidStudioProjects/PlanetSearch/app/src/main/res/layout/planet_item_view.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/sjani/AndroidStudioProjects/PlanetSearch/app/src/main/res/layout/space_vehicles_fragment.xml" value="0.1" />
       </map>
     </option>
   </component>

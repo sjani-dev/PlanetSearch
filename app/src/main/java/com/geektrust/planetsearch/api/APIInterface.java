@@ -2,6 +2,7 @@ package com.geektrust.planetsearch.api;
 
 import com.geektrust.planetsearch.model.PlanetDetails;
 import com.geektrust.planetsearch.model.PlanetListResposne;
+import com.geektrust.planetsearch.model.VehicleDetails;
 
 import java.util.List;
 
@@ -13,9 +14,9 @@ public interface APIInterface {
     @GET("planets")
     Observable<List<PlanetDetails>> getPlanetList();
 
-   /* @GET("vehicles")
-    Observable<List<PlanetDetails>> getPlanetList();
-
+    @GET("vehicles")
+    Observable<List<VehicleDetails>> getVehicleList();
+/*
     @POST("find")
     @Headers("Accept:application/json", "Content-Type:application/json")
     fun findFalcone(@Body findFalconeRequestTO: FindFalconeRequestTO): Call<FindFalconeResponseTO>
